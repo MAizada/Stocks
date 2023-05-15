@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		2E5E18BC2A05568600F0A748 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E18BA2A05568600F0A748 /* LaunchScreen.storyboard */; };
 		2E5E18CA2A055A8F00F0A748 /* StocksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5E18C82A055A8F00F0A748 /* StocksTableViewCell.swift */; };
 		2E5E18CB2A055A8F00F0A748 /* StocksTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E18C92A055A8F00F0A748 /* StocksTableViewCell.xib */; };
+		2E6074152A0E8F0500EFCC44 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6074142A0E8F0500EFCC44 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		2E5E18BD2A05568600F0A748 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E5E18C82A055A8F00F0A748 /* StocksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksTableViewCell.swift; sourceTree = "<group>"; };
 		2E5E18C92A055A8F00F0A748 /* StocksTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StocksTableViewCell.xib; sourceTree = "<group>"; };
+		2E6074142A0E8F0500EFCC44 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		2E5E18AE2A05568500F0A748 /* Stocks */ = {
 			isa = PBXGroup;
 			children = (
+				2E6074132A0E8EEA00EFCC44 /* Model */,
 				2E5E18C32A05588000F0A748 /* Cell */,
 				2E5E18AF2A05568500F0A748 /* AppDelegate.swift */,
 				2E5E18B12A05568500F0A748 /* SceneDelegate.swift */,
@@ -79,6 +82,14 @@
 				2E5E18C92A055A8F00F0A748 /* StocksTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		2E6074132A0E8EEA00EFCC44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E6074142A0E8F0500EFCC44 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,7 +128,7 @@
 				};
 			};
 			buildConfigurationList = 2E5E18A72A05568500F0A748 /* Build configuration list for PBXProject "Stocks" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -153,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E6074152A0E8F0500EFCC44 /* Model.swift in Sources */,
 				2E5E18B42A05568500F0A748 /* ViewController.swift in Sources */,
 				2E5E18B02A05568500F0A748 /* AppDelegate.swift in Sources */,
 				2E5E18CA2A055A8F00F0A748 /* StocksTableViewCell.swift in Sources */,

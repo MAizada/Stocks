@@ -11,9 +11,15 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+   let baseURL = "https://api.disneyapi.dev"
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Stocks"
+      
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(StocksTableViewCell.nib, forCellReuseIdentifier: StocksTableViewCell.identifier)
@@ -31,6 +37,7 @@ extension ViewController: UITableViewDelegate,  UITableViewDataSource  {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: StocksTableViewCell.identifier) as! StocksTableViewCell
+        cell.nameLabel.text = "Herald"
         return cell
     }
     
